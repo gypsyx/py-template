@@ -1,0 +1,22 @@
+[project]
+name = "TODO PROJECT_NAME"
+version = "1.0.0"
+description = "TODO ADD DESCRIPTION"
+readme = "README.rst"
+dependencies = [
+    "flask",
+]
+
+
+[project.optional-dependencies]
+test = ["pytest"]
+# add pytest-coverage
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error"]
+
